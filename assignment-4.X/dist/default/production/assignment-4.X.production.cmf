@@ -1,0 +1,272 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/main.o
+__absolute__ - 0 0 0 176 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 176-1FFF 1
+SFR 3800-3FFF 1
+BANK1 176-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 176-1FFFF 1
+IDLOC 200000-20000F 1
+SMALLCONST 2000-1FFFF 1
+CODE 176-1FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BIGRAM 176-1FFF 1
+BIGSFR 3800-3FFF 1
+CONFIG 300000-300009 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 2000-FFFF 1
+MEDIUMCONST 12000-1FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/main.o
+0 __absolute__ ABS >43:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+2 __absolute__ ABS >44:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+4 __absolute__ ABS >45:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+6 __absolute__ ABS >46:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+8 __absolute__ ABS >47:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+A __absolute__ ABS >48:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+C __absolute__ ABS >49:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+E __absolute__ ABS >50:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+10 __absolute__ ABS >51:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+12 __absolute__ ABS >57:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+14 __absolute__ ABS >58:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+16 __absolute__ ABS >65:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+18 __absolute__ ABS >66:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+1A __absolute__ ABS >67:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+1C __absolute__ ABS >68:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+1E __absolute__ ABS >74:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+20 __absolute__ ABS >75:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+22 __absolute__ ABS >76:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+24 __absolute__ ABS >77:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+26 __absolute__ ABS >80:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+28 __absolute__ ABS >81:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+2C __absolute__ ABS >82:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+2E __absolute__ ABS >83:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+32 __absolute__ ABS >85:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+34 __absolute__ ABS >86:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+36 __absolute__ ABS >88:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+38 __absolute__ ABS >89:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+3C __absolute__ ABS >90:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+3E __absolute__ ABS >91:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+42 __absolute__ ABS >92:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+44 __absolute__ ABS >93:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+48 __absolute__ ABS >94:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+4C __absolute__ ABS >96:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+4E __absolute__ ABS >97:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+52 __absolute__ ABS >98:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+56 __absolute__ ABS >100:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+58 __absolute__ ABS >101:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+5A __absolute__ ABS >102:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+5C __absolute__ ABS >103:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+5E __absolute__ ABS >104:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+62 __absolute__ ABS >106:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+64 __absolute__ ABS >107:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+66 __absolute__ ABS >108:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+68 __absolute__ ABS >109:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+6A __absolute__ ABS >110:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+6E __absolute__ ABS >115:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+72 __absolute__ ABS >116:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+74 __absolute__ ABS >117:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+76 __absolute__ ABS >118:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+78 __absolute__ ABS >119:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+7C __absolute__ ABS >121:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+80 __absolute__ ABS >122:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+82 __absolute__ ABS >123:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+84 __absolute__ ABS >124:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+86 __absolute__ ABS >125:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+8A __absolute__ ABS >126:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+8C __absolute__ ABS >127:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+8E __absolute__ ABS >128:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+90 __absolute__ ABS >129:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+92 __absolute__ ABS >130:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+96 __absolute__ ABS >131:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+98 __absolute__ ABS >133:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+9C __absolute__ ABS >134:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+9E __absolute__ ABS >135:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+A0 __absolute__ ABS >136:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+A2 __absolute__ ABS >137:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+A6 __absolute__ ABS >139:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+AA __absolute__ ABS >140:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+AC __absolute__ ABS >141:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+AE __absolute__ ABS >142:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+B0 __absolute__ ABS >143:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+B4 __absolute__ ABS >144:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+B6 __absolute__ ABS >145:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+B8 __absolute__ ABS >146:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+BA __absolute__ ABS >147:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+BC __absolute__ ABS >148:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+C0 __absolute__ ABS >149:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+C2 __absolute__ ABS >151:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+C4 __absolute__ ABS >153:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+C6 __absolute__ ABS >154:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+C8 __absolute__ ABS >155:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+CA __absolute__ ABS >156:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+CE __absolute__ ABS >157:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+D0 __absolute__ ABS >158:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+D4 __absolute__ ABS >159:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+D6 __absolute__ ABS >160:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+D8 __absolute__ ABS >161:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+DA __absolute__ ABS >163:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+DC __absolute__ ABS >164:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+DE __absolute__ ABS >165:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+E0 __absolute__ ABS >166:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+E2 __absolute__ ABS >167:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+E4 __absolute__ ABS >168:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+E6 __absolute__ ABS >169:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+E8 __absolute__ ABS >170:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+EA __absolute__ ABS >171:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+EC __absolute__ ABS >173:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+EE __absolute__ ABS >174:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+F2 __absolute__ ABS >175:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+F4 __absolute__ ABS >176:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+F6 __absolute__ ABS >178:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+F8 __absolute__ ABS >179:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+FA __absolute__ ABS >180:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+FC __absolute__ ABS >181:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+FE __absolute__ ABS >186:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+100 __absolute__ ABS >187:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+102 __absolute__ ABS >188:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+106 __absolute__ ABS >189:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+10A __absolute__ ABS >191:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+10C __absolute__ ABS >192:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+10E __absolute__ ABS >193:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+112 __absolute__ ABS >195:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+114 __absolute__ ABS >196:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+118 __absolute__ ABS >197:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+11C __absolute__ ABS >199:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+11E __absolute__ ABS >200:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+120 __absolute__ ABS >201:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+126 __absolute__ ABS >202:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+12A __absolute__ ABS >204:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+12C __absolute__ ABS >205:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+12E __absolute__ ABS >206:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+130 __absolute__ ABS >207:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+132 __absolute__ ABS >208:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+138 __absolute__ ABS >209:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+13A __absolute__ ABS >211:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+13C __absolute__ ABS >212:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+13E __absolute__ ABS >213:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+142 __absolute__ ABS >214:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+146 __absolute__ ABS >216:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+148 __absolute__ ABS >217:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+14A __absolute__ ABS >218:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+14E __absolute__ ABS >220:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+150 __absolute__ ABS >221:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+154 __absolute__ ABS >222:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+158 __absolute__ ABS >224:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+15A __absolute__ ABS >225:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+15C __absolute__ ABS >226:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+162 __absolute__ ABS >227:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+166 __absolute__ ABS >229:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+168 __absolute__ ABS >230:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+16A __absolute__ ABS >231:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+16C __absolute__ ABS >232:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+16E __absolute__ ABS >233:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+174 __absolute__ ABS >234:C:\Users\Diego\Documents\ECE 520\assignment 4\assignment-4\assignment-4.X\main.asm
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 176 0 ABS 0 - -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+isa$xinst 0 0 ABS 0 - build/default/production/main.o
+isa$std 1 0 ABS 0 - build/default/production/main.o
+__Lspace_0 0 0 ABS 0 - -
+__H__absolute__ 176 0 ABS 0 __absolute__ -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

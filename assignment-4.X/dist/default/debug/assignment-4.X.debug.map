@@ -1,0 +1,190 @@
+Microchip MPLAB XC8 PIC(R) Assembler V2.46
+
+Linker command line:
+
+-W-3 \
+  --edf=C:\Installed Programs\Microchip\xc8\v2.46\pic\dat\20240104201356_en.msgs \
+  -cs -h+dist/default/debug\assignment-4.X.debug.sym \
+  --cmf=dist/default/debug\assignment-4.X.debug.cmf -z -Q18F47K42 \
+  -oC:\Users\Diego\AppData\Local\Temp\xcAsa40.\driver_tmp_3.o \
+  --fixupoverflow=error -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
+  -Mdist/default/debug/assignment-4.X.debug.map -E1 --acfsm=1493 \
+  -ACODE=00h-01FFFFh -ACONST=00h-01FFFFh -ASMALLCONST=02000h-020FFhx480 \
+  -AMEDIUMCONST=02000h-0FFFFh,012000h-01FFFFh -ACOMRAM=00h-05Fh \
+  -AABS1=00h-01FFFh -ABIGRAM=00h-01FFFh -ARAM=060h-0FFh,0100h-01FFhx31 \
+  -ABANK0=060h-0FFh -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh \
+  -ABANK3=0300h-03FFh -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh \
+  -ABANK6=0600h-06FFh -ABANK7=0700h-07FFh -ABANK8=0800h-08FFh \
+  -ABANK9=0900h-09FFh -ABANK10=0A00h-0AFFh -ABANK11=0B00h-0BFFh \
+  -ABANK12=0C00h-0CFFh -ABANK13=0D00h-0DFFh -ABANK14=0E00h-0EFFh \
+  -ABANK15=0F00h-0FFFh -ABANK16=01000h-010FFh -ABANK17=01100h-011FFh \
+  -ABANK18=01200h-012FFh -ABANK19=01300h-013FFh -ABANK20=01400h-014FFh \
+  -ABANK21=01500h-015FFh -ABANK22=01600h-016FFh -ABANK23=01700h-017FFh \
+  -ABANK24=01800h-018FFh -ABANK25=01900h-019FFh -ABANK26=01A00h-01AFFh \
+  -ABANK27=01B00h-01BFFh -ABANK28=01C00h-01CFFh -ABANK29=01D00h-01DFFh \
+  -ABANK30=01E00h-01EFFh -ABANK31=01F00h-01FFFh \
+  -ASFR=03800h-038FFhx7,03F00h-03F5Fh,03F60h-03FFFh -ABIGSFR=03800h-03FFFh \
+  -ACONFIG=0300000h-0300009h -AIDLOC=0200000h-020000Fh \
+  -AEEDATA=0310000h-03103FFh build/default/debug/main.o 
+
+Object code version is 3.11
+
+Machine type is 18F47K42
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+build/default/debug/main.o
+                __absolute__                          0        0      176        0       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CODE           
+
+        CLASS   CONST          
+
+        CLASS   SMALLCONST     
+
+        CLASS   MEDIUMCONST    
+
+        CLASS   COMRAM         
+
+        CLASS   ABS1           
+
+        CLASS   BIGRAM         
+
+        CLASS   RAM            
+
+        CLASS   BANK0          
+
+        CLASS   BANK1          
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+
+        CLASS   BANK4          
+
+        CLASS   BANK5          
+
+        CLASS   BANK6          
+
+        CLASS   BANK7          
+
+        CLASS   BANK8          
+
+        CLASS   BANK9          
+
+        CLASS   BANK10         
+
+        CLASS   BANK11         
+
+        CLASS   BANK12         
+
+        CLASS   BANK13         
+
+        CLASS   BANK14         
+
+        CLASS   BANK15         
+
+        CLASS   BANK16         
+
+        CLASS   BANK17         
+
+        CLASS   BANK18         
+
+        CLASS   BANK19         
+
+        CLASS   BANK20         
+
+        CLASS   BANK21         
+
+        CLASS   BANK22         
+
+        CLASS   BANK23         
+
+        CLASS   BANK24         
+
+        CLASS   BANK25         
+
+        CLASS   BANK26         
+
+        CLASS   BANK27         
+
+        CLASS   BANK28         
+
+        CLASS   BANK29         
+
+        CLASS   BANK30         
+
+        CLASS   BANK31         
+
+        CLASS   SFR            
+
+        CLASS   BIGSFR         
+
+        CLASS   CONFIG         
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+        CLASS   UNCLASSED
+                __absolute__                          0        0      176         0
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
+
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK1            176-1FF            8A
+        BANK10           A00-AFF           100
+        BANK11           B00-BFF           100
+        BANK12           C00-CFF           100
+        BANK13           D00-DFF           100
+        BANK14           E00-EFF           100
+        BANK15           F00-FFF           100
+        BANK16           1000-10FF           100
+        BANK17           1100-11FF           100
+        BANK18           1200-12FF           100
+        BANK19           1300-13FF           100
+        BANK2            200-2FF           100
+        BANK20           1400-14FF           100
+        BANK21           1500-15FF           100
+        BANK22           1600-16FF           100
+        BANK23           1700-17FF           100
+        BANK24           1800-18FF           100
+        BANK25           1900-19FF           100
+        BANK26           1A00-1AFF           100
+        BANK27           1B00-1BFF           100
+        BANK28           1C00-1CFF           100
+        BANK29           1D00-1DFF           100
+        BANK3            300-3FF           100
+        BANK30           1E00-1EFF           100
+        BANK31           1F00-1FFF           100
+        BANK4            400-4FF           100
+        BANK5            500-5FF           100
+        BANK6            600-6FF           100
+        BANK7            700-7FF           100
+        BANK8            800-8FF           100
+        BANK9            900-9FF           100
+        BIGRAM           176-1FFF          1E8A
+        BIGSFR           3800-3FFF           800
+        CODE             176-1FFFF         1FE8A
+        CONFIG           300000-300009             A
+        CONST            176-1FFFF         1FE8A
+        EEDATA           310000-3103FF           400
+        IDLOC            200000-20000F            10
+        MEDIUMCONST      2000-FFFF          E000
+                         12000-1FFFF          E000
+        RAM              176-1FFF           100
+        SFR              3800-3FFF           100
+        SMALLCONST       2000-1FFFF           100
+
+                                  Symbol Table
+
+__H__absolute__ __absolute__ 176  __Hspace_0      (abs)        176
+__L__absolute__ __absolute__ 000  __Lspace_0      (abs)        000
+isa$std         (abs)        001  isa$xinst       (abs)        000

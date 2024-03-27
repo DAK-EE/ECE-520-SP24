@@ -1,12 +1,10 @@
-   
-;---------------------
-; Configuration Bits -Do not change
-;---------------------
-; PIC18F46K42 Configuration Bit Settings
+
+; PIC18F47K42 Configuration Bit Settings
+
 ; Assembly source line config statements
 
 ; CONFIG1L
-  CONFIG  FEXTOSC = LP          ; External Oscillator Selection (LP (crystal oscillator) optimized for 32.768 kHz; PFM set to low power)
+  CONFIG  FEXTOSC = OFF         ; External Oscillator Selection (Oscillator not enabled)
   CONFIG  RSTOSC = EXTOSC       ; Reset Oscillator Selection (EXTOSC operating per FEXTOSC bits (device manufacturing default))
 
 ; CONFIG1H
@@ -17,11 +15,11 @@
 
 ; CONFIG2L
   CONFIG  MCLRE = EXTMCLR       ; MCLR Enable bit (If LVP = 0, MCLR pin is MCLR; If LVP = 1, RE3 pin function is MCLR )
-  CONFIG  PWRTS = PWRT_OFF      ; Power-up timer selection bits (PWRT is disabled)
+  CONFIG  PWRTS = PWRT_64       ; Power-up timer selection bits (PWRT set at 64ms)
   CONFIG  MVECEN = ON           ; Multi-vector enable bit (Multi-vector enabled, Vector table used for interrupts)
   CONFIG  IVT1WAY = ON          ; IVTLOCK bit One-way set enable bit (IVTLOCK bit can be cleared and set only once)
   CONFIG  LPBOREN = OFF         ; Low Power BOR Enable bit (ULPBOR disabled)
-  CONFIG  BOREN = SBORDIS       ; Brown-out Reset Enable bits (Brown-out Reset enabled , SBOREN bit is ignored)
+  CONFIG  BOREN = OFF           ; Brown-out Reset Enable bits (Brown-out Reset disabled)
 
 ; CONFIG2H
   CONFIG  BORV = VBOR_2P45      ; Brown-out Reset Voltage Selection bits (Brown-out Reset Voltage (VBOR) set to 2.45V)
@@ -50,16 +48,14 @@
   CONFIG  WRTC = OFF            ; Configuration Register Write Protection bit (Configuration registers not write-protected)
   CONFIG  WRTD = OFF            ; Data EEPROM Write Protection bit (Data EEPROM not write-protected)
   CONFIG  WRTSAF = OFF          ; SAF Write protection bit (SAF not Write Protected)
-  CONFIG  LVP = ON              ; Low Voltage Programming Enable bit (Low voltage programming enabled. MCLR/VPP pin function is MCLR. MCLRE configuration bit is ignored)
+  CONFIG  LVP = OFF             ; Low Voltage Programming Enable bit (HV on MCLR/VPP must be used for programming)
 
+; CONFIG5L
   CONFIG  CP = OFF              ; PFM and Data EEPROM Code Protection bit (PFM and Data EEPROM code protection disabled)
 
+; CONFIG5H
 
-; config statements should precede project file includes.
-
-
-
-
-
+// config statements should precede project file includes.
+#include <xc.inc>
 
 
